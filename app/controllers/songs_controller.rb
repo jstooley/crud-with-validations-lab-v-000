@@ -34,7 +34,7 @@ class SongsController < ApplicationController
     end
   end
 
-  def delete
+  def destroy
   end
 
   private
