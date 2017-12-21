@@ -27,6 +27,7 @@ class SongsController < ApplicationController
 
   def update
     @song = set_song!
+    @song.title
   end
 
   def delete
