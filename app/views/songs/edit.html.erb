@@ -1,6 +1,7 @@
 <h1>Edit <%= @song %></h1>
 <%= form_for(@song) do |f| %>
  <% if @song.errors.any? %>
+
  <div id= "error_explanation">
 
    <h2>There were some errors:</h2>
@@ -12,6 +13,7 @@
    </ul>
 
   </div>
+  
  <%end%>
 
  <div class="field">
