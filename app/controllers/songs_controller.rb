@@ -13,6 +13,7 @@ class SongsController < ApplicationController
   end
 
   def edit
+    @song = set-song!
   end
 
   def create
