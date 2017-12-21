@@ -9,7 +9,4 @@ class Song < ActiveRecord::Base
  	  less_than_or_equal_to: Date.current.year, if: :released?
  	}
 
- 	def released?
- 		released
- 	end
 end
