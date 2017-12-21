@@ -1,5 +1,5 @@
 <h1>Songs List</h1>
-<% @songs.all do |song|%>
+<% @songs.each do |song|%>
   <div>
     <h3><%= song.title %></h3>
     <p><%= song.artist_name %></p>
