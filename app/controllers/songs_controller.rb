@@ -31,6 +31,7 @@ class SongsController < ApplicationController
     @song.release_year
     @song.released
     @song.artist_name
+    @song.genre
   end
 
   def delete
