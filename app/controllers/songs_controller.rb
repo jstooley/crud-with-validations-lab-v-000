@@ -5,7 +5,7 @@ class SongsController < ApplicationController
   end
 
   def show
-    set_song!
+    @song = set_song!
   end
 
   def new
