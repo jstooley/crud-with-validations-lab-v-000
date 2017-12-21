@@ -27,11 +27,11 @@ class SongsController < ApplicationController
 
   def update
     @song = set_song!
-    @song.title
-    @song.release_year
-    @song.released
-    @song.artist_name
-    @song.genre
+    @song.title = params[:]
+    @song.release_year = params[:]
+    @song.released = params[:]
+    @song.artist_name = params[:]
+    @song.genre = params[:]
   end
 
   def delete
