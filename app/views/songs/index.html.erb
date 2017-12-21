@@ -2,6 +2,7 @@
 <% @songs.each do |song|%>
   <tr>
     <%= link_to song.title, song_path(song)%> -
-    <%= link_to "Delete", song, method: :delete, data:{confirm: "Are you sure?"}%>
+    <%= link_to "Delete", song, method: :delete, data:{confirm: "Are you sure?"} %>
+    <br>
   </tr>
 <% end %>
