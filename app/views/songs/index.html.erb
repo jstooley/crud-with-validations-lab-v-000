@@ -2,5 +2,8 @@
 <% @songs.all do |song|%>
   <div>
     <%= song.title %>
+    <%= song.artist_name %>
+    <%= song.release_year %>
+    <%= song.genre %>
   </div>
 <% end %>
