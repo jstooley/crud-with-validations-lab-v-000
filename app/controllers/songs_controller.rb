@@ -29,6 +29,7 @@ class SongsController < ApplicationController
     @song = set_song!
     if @song.update(song_params)
     else
+      render :edit
     end
   end
 
