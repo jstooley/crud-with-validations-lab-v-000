@@ -28,6 +28,8 @@ class SongsController < ApplicationController
   def update
     @song = set_song!
     if @song.update(song_params)
+    else
+    end
   end
 
   def delete
