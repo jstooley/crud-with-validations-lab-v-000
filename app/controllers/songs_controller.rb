@@ -20,6 +20,7 @@ class SongsController < ApplicationController
     @song = Song.new(song_params)
     if @song.save
     else
+      render :new
     end
   end
 
