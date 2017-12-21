@@ -3,15 +3,15 @@
  <% if @song.errors.any? %>
  <div id= "error_explanation">
  <h2>There were some errors:</h2>
- 
+
  <ul>
-     <% @songs.errors.full_messages.each do |error| %>
-     <%= error %>
-     <%end%>
+  <% @songs.errors.full_messages.each do |error| %>
+  <%= error %>
+  <%end%>
  </ul>
  </div>
  <%end%>
- 
+
  <div class="field">
      <%= f.label :title %>
      <%= f.text_field :title %>
@@ -35,5 +35,5 @@
  <div class = "actions">
      <%= f.submit %>
  </div>
- 
- <%end%> 
+
+ <%end%>
