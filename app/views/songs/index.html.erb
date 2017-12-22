@@ -4,6 +4,7 @@
   <tbody>
     <tr>
       <%= link_to song.title, song_path(song)%> 
+      <%= link_to "Edit", song_path(song)%> 
       <%= link_to "Delete", song, method: :delete, data:{confirm: "Are you sure?"} %>
     </tr>
   </tbody>
